@@ -96,3 +96,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     mac-update \
     bdAddrLoader
+
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_camera \
+    libshim_ril
