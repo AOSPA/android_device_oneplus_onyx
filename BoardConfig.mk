@@ -76,6 +76,9 @@ TARGET_OTA_ASSERT_DEVICE := onyx,A0001
 
 TARGET_USES_ION := true
 
+# FM
+TARGET_QCOM_NO_FM_FIRMWARE := true
+
 TARGET_HW_DISK_ENCRYPTION := false
 
 # Workaround framework bluetooth dependency

@@ -80,8 +80,6 @@ EBTABLES += libebtc
 FASTPOWERON := FastBoot
 
 #FM
-FM := qcom.fmradio
-FM += libqcomfm_jni
 FM += libfmjni
 
 #GPS
