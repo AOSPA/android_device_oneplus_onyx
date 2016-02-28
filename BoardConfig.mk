@@ -69,7 +69,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 1388314624
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 13271448576
 
-TARGET_OTA_ASSERT_DEVICE := bacon,A0001
+TARGET_OTA_ASSERT_DEVICE := onyx,A0001
 
 TARGET_USES_ION := true
 
@@ -79,7 +79,7 @@ TARGET_HW_DISK_ENCRYPTION := false
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/onyx
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -98,14 +98,14 @@ ifeq ($(HOST_OS),linux)
       WITH_DEXPREOPT := true
 endif
 
-TARGET_RECOVERY_FSTAB = device/oneplus/bacon/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB = device/oneplus/onyx/rootdir/etc/fstab.qcom
 
 BOARD_NFC_CHIPSET := pn547
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
 BOARD_SEPOLICY_DIRS += \
-     device/oneplus/bacon/sepolicy
+     device/oneplus/onyx/sepolicy
 
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 USE_OPENGL_RENDERER := true

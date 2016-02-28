@@ -1,15 +1,15 @@
-LOCAL_PATH := device/oneplus/bacon
+LOCAL_PATH := device/oneplus/onyx
 
 DEVICE_PACKAGE_OVERLAYS := \
    $(LOCAL_PATH)/overlay
 
-$(call inherit-product, device/oneplus/bacon/common.mk)
+$(call inherit-product, device/oneplus/onyx/common.mk)
 
-$(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
+$(call inherit-product, vendor/oneplus/onyx/onyx-vendor.mk)
 
-PRODUCT_COPY_FILES += device/oneplus/bacon/media/media_profiles_8974.xml:system/etc/media_profiles.xml \
-                      device/oneplus/bacon/media/media_codecs_8974.xml:system/etc/media_codecs.xml \
-                      device/oneplus/bacon/media/media_codecs_performance_8974.xml:system/etc/media_codecs_performance.xml
+PRODUCT_COPY_FILES += device/oneplus/onyx/media/media_profiles_8974.xml:system/etc/media_profiles.xml \
+                      device/oneplus/onyx/media/media_codecs_8974.xml:system/etc/media_codecs.xml \
+                      device/oneplus/onyx/media/media_codecs_performance_8974.xml:system/etc/media_codecs_performance.xml
 
 PRODUCT_CHARACTERISTICS := nosdcard
 

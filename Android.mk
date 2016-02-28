@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),bacon)
+ifeq ($(TARGET_DEVICE),onyx)
 
 LOCAL_PATH := $(call my-dir)
 

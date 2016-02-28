@@ -48,7 +48,7 @@ BSON := libbson
 #BT
 BT := javax.btobex
 BT += libattrib_static
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/bacon
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oneplus/onyx
 
 #C2DColorConvert
 C2DCC := libc2dcolorconvert
@@ -450,7 +450,7 @@ PRODUCT_COPY_FILES := \
 
 # gps/location secuity configuration file
 PRODUCT_COPY_FILES += \
-    device/oneplus/bacon/gps/sec_config:system/etc/sec_config
+    device/oneplus/onyx/gps/sec_config:system/etc/sec_config
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
