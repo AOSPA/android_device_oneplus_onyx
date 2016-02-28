@@ -143,6 +143,18 @@ $(WV_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WV_SYMLINKS)
 
+TQS_IMAGES := \
+    tqs.b00 tqs.b01 tqs.b02 tqs.b03 tqs.mdt
+
+TQS_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(TQS_IMAGES)))
+$(TQS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "TQS firmware link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(TQS_SYMLINKS)
+
 # Create links for audcal data files
 $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wcd9320; \
 	ln -sf /data/misc/audio/wcd9320_anc.bin \
