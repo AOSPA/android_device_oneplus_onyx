@@ -112,6 +112,7 @@ I420CC := libI420colorconvert
 
 #INIT
 INIT += init.qcom.modem_links.sh
+INIT += init.qcom.ril.sh
 INIT += init.target.rc
 INIT += init.qcom.bt.sh
 INIT += init.qcom.early_boot.sh
