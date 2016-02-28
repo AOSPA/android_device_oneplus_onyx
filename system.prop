@@ -151,3 +151,12 @@ ro.hwui.text_small_cache_width=2048
 ro.hwui.text_small_cache_height=2048
 ro.hwui.text_large_cache_width=3072
 ro.hwui.text_large_cache_height=2048
+
+# Dual SIM properties
+persist.radio.multisim.config=dsds
+persist.radio.msim.stackid_0=0
+persist.radio.msim.stackid_1=1
+persist.env.fastdorm.enabled=true
+persist.radio.data_no_toggle=1
+persist.radio.eons.enabled=false
+persist.radio.ril_payload_on=0
