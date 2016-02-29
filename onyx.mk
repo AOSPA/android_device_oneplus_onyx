@@ -120,3 +120,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
+
+PRODUCT_PACKAGES += \
+    mac-update

@@ -1,0 +1,11 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := mac-update
+LOCAL_SRC_FILES := mac-update.c
+
+LOCAL_MODULE_PATH := $(TARGET_OUT_EXECUTABLES)
+LOCAL_MODULE_TAGS := eng debug
+LOCAL_SHARED_LIBRARIES := liblog
+
+include $(BUILD_EXECUTABLE)

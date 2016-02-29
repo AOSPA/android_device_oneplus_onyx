@@ -1,0 +1,8 @@
+type mac-update, domain;
+type mac-update_exec, exec_type, file_type;
+
+init_daemon_domain(mac-update)
+
+allow mac-update wcnss_device:chr_file rw_file_perms;
+allow mac-update system_data_file:file r_file_perms;
+allow mac-update devpts:chr_file rw_file_perms;
