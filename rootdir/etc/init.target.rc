@@ -151,7 +151,7 @@ service wcnss-service /system/bin/wcnss_service
     group system wifi qcom_diag radio
     oneshot
 
-service_redefine ril-daemon /system/bin/rild
+service ril-daemon /system/bin/rild
     class main
     socket rild stream 660 root radio
     socket rild-debug stream 660 radio system
