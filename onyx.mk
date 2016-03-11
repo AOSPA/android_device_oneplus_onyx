@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
+# Keylayouts
+PRODUCT_COPY_FILES += \
+		$(LOCAL_PATH)/keylayout/synaptics-rmi.kl:system/usr/keylayout/synaptics-rmi.kl
+
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
