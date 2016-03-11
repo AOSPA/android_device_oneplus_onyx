@@ -18,6 +18,7 @@ persist.rild.nitz_short_ons_3=
 DEVICE_PROVISIONED=1
 # Start in LTE/WCDMA/GSM mode
 ro.telephony.default_network=9
+ro.telephony.ril.config=simactivation
 
 debug.sf.hw=1
 debug.egl.hw=1
