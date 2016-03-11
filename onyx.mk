@@ -85,33 +85,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
-# NFC
-PRODUCT_PACKAGES += \
-    nfc_nci.msm8974 \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
-
-# file that declares the MIFARE NFC constant
-# Commands to migrate prefs from com.android.nfc3 to com.android.nfc
-# NFC access control + feature files + configuration
-PRODUCT_COPY_FILES += \
-        frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-        frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-        frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-        $(LOCAL_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-        $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
-# Enable NFC Forum testing by temporarily changing the PRODUCT_BOOT_JARS
-# line has to be in sync with build/target/product/core_base.mk
-
-ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/nfc/nfcee_access.xml
-else
-    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/nfc/nfcee_access_debug.xml
-endif
-PRODUCT_COPY_FILES += \
-    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
-
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 

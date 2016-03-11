@@ -107,8 +107,6 @@ ro.qti.sensors.bte=true
 ro.qti.sensors.gtap=true
 ro.qti.sensors.vmd=true
 
-# system prop for NFC DT
-ro.nfc.port=I2C
 #property to enable user to access Google WFD settings.
 persist.debug.wfd.enable=1
 #property to choose between virtual/external wfd display
