@@ -52,9 +52,6 @@ on fs
     chmod 0660 /dev/ramdump_pronto
     chown system system /dev/ramdump_pronto
 
-    #cpufreq selinux
-    restorecon_recursive /sys/devices/system/cpu/cpufreq
-
 on post-fs-data
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
@@ -80,12 +77,12 @@ on post-fs-data
     chmod 0644 /sys/devices/tri_state_key.86/keyCode_middle
     chmod 0644 /sys/devices/tri_state_key.86/keyCode_bottom
 
-    chown system radio /proc/touchpanel/gesture_enable
-    chmod 0660 /proc/touchpanel/gesture_enable
+    chown system radio /proc/touchpanel/double_tap_enable
+    chmod 0660 /proc/touchpanel/double_tap_enable
 
 on boot
-    #Create OPPO NV item directory
-    mkdir /data/opponvitems 0771 radio radio
+    # Create OEM NV item directory
+    mkdir /data/oemnvitems 0771 radio radio
 
     # For WiFi
     chown wifi wifi /dev/rfkill
@@ -114,7 +111,6 @@ on property:bluetooth.hsic_ctrl=load_wlan
 
 on property:bluetooth.hsic_ctrl=unbind_hsic
     start bt_hsic_control
-
 
 service mac-update /system/bin/mac-update
     class late_start

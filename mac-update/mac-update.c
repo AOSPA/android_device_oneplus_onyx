@@ -47,7 +47,7 @@ static char mac[6];
 int read_mac(const char *filename)
 {
     char raw[6];
-    FILE *fp = NULL;
+    int fd = -1;
     int numtries = 0;
     int ret;
 
@@ -55,19 +55,19 @@ int read_mac(const char *filename)
     memset(mac, 0, 6);
 
     //Try to open the file once every 4 seconds for 120 seconds
-    while(fp == NULL && numtries++ < 30) {
-        fp = fopen(filename, "r");
-        if(fp == NULL) {
+    while(fd < 0 && numtries++ < 30) {
+        fd = open(filename, O_RDONLY);
+        if(fd < 0) {
             sleep(4);
         }
     }
 
     //if it's still not open, bomb out
-    if (fp == NULL)
+    if (fd < 0)
         return ENOENT;
 
-    ret = fread(raw, 6, 1, fp);
-    fclose(fp);
+    ret = read(fd, raw, 6);
+    close(fd);
 
     // swap bytes
     mac[0] = raw[5];
