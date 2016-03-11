@@ -37,13 +37,10 @@ on init
     # session is not exercised through RemoteDisplay in the android framework
     setprop persist.sys.wfd.virtual 0
 
-    # USB OTG support
-    chmod 0701 /mnt/media_rw
-    mkdir /mnt/media_rw/usbdisk 0700 media_rw media_rw
-    mkdir /storage/usbdisk 0700 root root
-
 on fs
     mount_all fstab.qcom
+
+    setprop ro.crypto.fuse_sdcard true
 
     restorecon_recursive   /persist
     mkdir /persist/data 0700 system system

@@ -11,8 +11,6 @@ PRODUCT_COPY_FILES += device/oneplus/onyx/media/media_profiles_8974.xml:system/e
                       device/oneplus/onyx/media/media_codecs_8974.xml:system/etc/media_codecs.xml \
                       device/oneplus/onyx/media/media_codecs_performance_8974.xml:system/etc/media_codecs_performance.xml
 
-PRODUCT_CHARACTERISTICS := nosdcard
-
 # Audio Calibration Database
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
