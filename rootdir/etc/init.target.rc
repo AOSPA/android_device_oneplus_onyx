@@ -32,7 +32,7 @@ on early-init
     symlink /data/tombstones /tombstones
 
 on init
-    export LD_SHIM_LIBS "/system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so:/system/lib/libril.so|libshim_ril.so:/system/lib/hw/camera.msm8974.so|libshim_camera.so"
+    export LD_SHIM_LIBS "/system/vendor/lib/libcne.so|libshim_ril.so:/system/lib/libril.so|libshim_ril.so:/system/lib/hw/camera.msm8974.so|libshim_camera.so"
 
     # Set the property to indicate type of virtual display to 0
     # 0 indicates that virtual display is not a Wifi display and that the
