@@ -91,7 +91,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-		$(LOCAL_PATH)/keylayout/synaptics-rmi.kl:system/usr/keylayout/synaptics-rmi.kl
+    $(LOCAL_PATH)/keylayout/synaptics-rmi.kl:system/usr/keylayout/synaptics-rmi.kl
 
 # Power
 PRODUCT_PACKAGES += \
@@ -105,3 +105,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_camera \
     libshim_ril
+
+# RIL
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
