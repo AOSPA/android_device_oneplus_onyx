@@ -39,6 +39,7 @@
 #include <getopt.h>
 #include <errno.h>
 #include <unistd.h>
+#include <limits.h>
 
 #define QCDT_MAGIC     "QCDT"  /* Master DTB magic */
 #define QCDT_VERSION   2       /* QCDT version */
@@ -777,7 +778,7 @@ int main(int argc, char **argv)
     memset(filler, 0, page_size);
 
     dtb_count = find_dtb(input_dir, &version);
-    
+
     log_info("=> Found %d unique DTB(s)\n", dtb_count);
 
     if (!dtb_count)
