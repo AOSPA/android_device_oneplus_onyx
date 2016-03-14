@@ -1,2 +1,4 @@
-allow sensors persist_file:file { getattr read };
+allow sensors init:unix_stream_socket connectto;
+allow sensors persist_file:file { getattr open read write };
 allow sensors property_socket:sock_file write;
+allow sensors system_prop:property_service set;

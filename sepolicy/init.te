@@ -1,1 +1,2 @@
 allow init proc_touchpanel:file getattr;
+allow init property_socket:sock_file { create setattr write};

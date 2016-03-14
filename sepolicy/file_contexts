@@ -7,3 +7,7 @@
 /data/fdAlbum                                           u:object_r:camera_data_file:s0
 
 /system/bin/mac-update 					u:object_r:mac-update_exec:s0 
+
+/data/oemnvitems(/.*)?                                  u:object_r:nv_data_file:s0
+
+/data/misc/perfd/mpctl                                  u:object_r:perf_data_file:s0
