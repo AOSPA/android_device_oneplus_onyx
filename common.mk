@@ -168,9 +168,6 @@ LIBGRALLOC += libmemalloc
 LIBMEMTRACK := memtrack.default
 LIBMEMTRACK += memtrack.msm8974
 
-#LIBLIGHTS
-LIBLIGHTS += lights.qcom
-
 #LIBHWCOMPOSER
 LIBHWCOMPOSER += hwcomposer.msm8974
 
