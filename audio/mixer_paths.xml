@@ -954,7 +954,7 @@
         <ctl name="SLIM TX7 MUX" value="DEC2" />
         <ctl name="DEC2 MUX" value="ADC5" />
         <ctl name="ADC5 Volume" value="19" />
-        <ctl name="DEC2 Volume" value="84" />
+        <ctl name="DEC2 Volume" value="94" />
 		<ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
@@ -1130,7 +1130,7 @@
     <path name="voice-handset">
         <path name="sidetone-handset" />
         <path name="handset" />
-        <ctl name="RX1 Digital Volume" value="89" />
+        <ctl name="RX1 Digital Volume" value="92" />
     </path>
 
     <path name="voice-handset-qosound">
