@@ -1,4 +1,5 @@
-# Allow rmt_storage to backup/restore NV contents
-allow rmt_storage nvbackup_block_device:blk_file rw_file_perms;
+# Leave rmt storage as permissive
+# We don't want to deal with pre M shit
+permissive rmt_storage;
 
-allow rmt_storage modem_block_device:blk_file { read write open };
+allow rmt_storage nvbackup_block_device:blk_file { read write open };

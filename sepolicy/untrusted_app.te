@@ -1,2 +1,0 @@
-allow untrusted_app perf_data_file:sock_file write;
-allow untrusted_app proc_touchpanel:dir { open read search };
