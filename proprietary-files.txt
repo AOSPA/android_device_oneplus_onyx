@@ -232,7 +232,6 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
 
 # Radio
--app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -app/shutdownlistener/shutdownlistener.apk
 bin/netmgrd
 bin/qmuxd
@@ -246,6 +245,7 @@ framework/qcrilhook.jar
 lib/libmdmdetect.so
 lib/libparam.so
 -lib/libril.so
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/lib/libNimsWrap.so
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
