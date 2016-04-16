@@ -122,4 +122,5 @@ PRODUCT_PACKAGES += \
     power.msm8974
 
 PRODUCT_PACKAGES += \
-    mac-update
+    mac-update \
+    bdAddrLoader
