@@ -79,22 +79,22 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>77</item>
-        <item>7</item>
+        <item>47</item>
+        <item>4</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>75</item>
-        <item>7</item>
+        <item>47</item>
+        <item>4</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
         <item>0</item>
-        <item>70</item>
-        <item>7</item>
+        <item>47</item>
+        <item>4</item>
     </integer-array>
 
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
