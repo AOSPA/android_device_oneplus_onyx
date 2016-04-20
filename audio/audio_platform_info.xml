@@ -29,7 +29,7 @@
         <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="15" />
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="15" />
         <!-- INPUT DEVICES -->
-        <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="41" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="4" />
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC" acdb_id="109" />
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="110" />
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="111" />
