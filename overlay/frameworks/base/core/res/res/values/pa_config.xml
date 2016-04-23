@@ -18,7 +18,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <integer name="config_buttonBrightnessSettingDefault">0</integer>
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
@@ -34,4 +33,17 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">19</integer>
 
+    <integer name="config_doubleTapKeyCode">249</integer>
+    <integer name="config_drawVKeyCode">252</integer>
+    <integer name="config_drawOKeyCode">250</integer>
+    <integer name="config_twoFingerSwipeKeyCode">251</integer>
+    <integer name="config_drawArrowLeftKeyCode">253</integer>
+    <integer name="config_drawArrowRightKeyCode">254</integer>
+
+    <integer name="config_doubleTapDefault">1</integer>
+    <integer name="config_drawVDefault">2</integer>
+    <integer name="config_drawODefault">7</integer>
+    <integer name="config_drawArrowLeftDefault">6</integer>
+    <integer name="config_drawArrowRightDefault">5</integer>
+    <integer name="config_twoFingerSwipeDefault">4</integer>
 </resources>
