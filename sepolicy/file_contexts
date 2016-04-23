@@ -12,4 +12,4 @@
 
 /data/oemnvitems(/.*)?                                  u:object_r:nv_data_file:s0
 
-/data/misc/perfd/mpctl                                  u:object_r:perf_data_file:s0
+/data/misc/perfd/mpctl                                  u:object_r:mpctl_socket:s0

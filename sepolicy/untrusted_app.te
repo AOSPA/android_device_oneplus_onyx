@@ -1,1 +1,1 @@
-allow untrusted_app perf_data_file:sock_file write;
+allow untrusted_app mpctl_socket:sock_file rw_file_perms;

@@ -1,4 +1,4 @@
-allow system_server perf_data_file:sock_file write;
+allow system_server mpctl_socket:sock_file rw_file_perms;
 
 allow system_server proc_touchpanel:file rw_file_perms;
 allow system_server proc_touchpanel:dir { search };

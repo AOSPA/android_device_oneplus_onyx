@@ -1,1 +1,1 @@
-allow platform_app perf_data_file:sock_file write;
+allow platform_app mpctl_socket:sock_file rw_file_perms;
