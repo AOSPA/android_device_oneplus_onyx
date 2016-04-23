@@ -119,3 +119,6 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
 # Control flag between KM versions
 TARGET_HW_KEYMASTER_V03 := true
+
+# RIL
+BOARD_RIL_CLASS += ../../../device/oneplus/onyx/ril
