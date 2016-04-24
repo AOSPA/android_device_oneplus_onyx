@@ -116,3 +116,7 @@ PRODUCT_COPY_FILES += \
 # FM Radio Application
 PRODUCT_PACKAGES += \
     FMRadio
+
+# Doze mode
+PRODUCT_PACKAGES += \
+    OneplusDoze
