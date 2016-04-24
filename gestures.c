@@ -55,7 +55,7 @@ void set_device_specific_feature(struct power_module *module __unused,
         arrowRight = state;
     }
 
-    if (feature == POWER_FEATURE_TWO_FINGER_SWIPE_DOWN) {
+    if (feature == POWER_FEATURE_TWO_FINGER_SWIPE) {
         twoFingerSwipeDown = state;
     }
 
