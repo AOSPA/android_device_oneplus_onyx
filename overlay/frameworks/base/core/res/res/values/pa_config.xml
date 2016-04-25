@@ -46,4 +46,8 @@
     <integer name="config_drawArrowLeftDefault">6</integer>
     <integer name="config_drawArrowRightDefault">5</integer>
     <integer name="config_twoFingerSwipeDefault">4</integer>
+
+    <!-- Whether to to intercept inputs on screen off. -->
+    <bool name="config_enableKeyHandler">true</bool>
+
 </resources>
