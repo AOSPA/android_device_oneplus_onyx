@@ -108,7 +108,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 BOARD_SEPOLICY_DIRS += \
      device/oneplus/onyx/sepolicy
 
-TARGET_POWER_GESTURE_FILE := device/oneplus/onyx/gestures.c
+TARGET_POWER_GESTURE_FILE := device/oneplus/onyx/power/gestures.c
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_DRAW_V_NODE := "/proc/touchpanel/flashlight_enable"
 TARGET_DRAW_O_NODE := "/proc/touchpanel/camera_enable"
