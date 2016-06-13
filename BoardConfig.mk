@@ -123,3 +123,6 @@ TARGET_HW_KEYMASTER_V03 := true
 
 # RIL
 BOARD_RIL_CLASS += ../../../device/oneplus/onyx/ril
+
+# Flashlight Fix
+COMMON_GLOBAL_CPPFLAGS += -DLEGACY_FLASHLIGHT_FIX
