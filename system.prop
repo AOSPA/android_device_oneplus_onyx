@@ -16,8 +16,8 @@ persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 DEVICE_PROVISIONED=1
-# Start in LTE/WCDMA/GSM mode
-ro.telephony.default_network=9
+# Start in TS-SCDMA/GSM/WCDMA/LTE mode
+ro.telephony.default_network=20,20
 ro.telephony.ril.config=simactivation
 ro.telephony.ril_class=OnePlusRIL
 
