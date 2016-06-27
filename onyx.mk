@@ -112,3 +112,7 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
+
+# FM Radio Application
+PRODUCT_PACKAGES += \
+    FMRadio
