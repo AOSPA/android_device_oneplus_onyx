@@ -1,11 +1,8 @@
-/dev/block/platform/msm_sdcc\.1/by-name/cache           u:object_r:cache_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/modem           u:object_r:modem_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/persist         u:object_r:persist_block_device:s0
 
 /dev/block/platform/msm_sdcc\.1/by-name/oppodycnvbk     u:object_r:nvbackup_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/oppostanvbk     u:object_r:nvbackup_block_device:s0
-
-/data/fdAlbum                                           u:object_r:camera_data_file:s0
 
 /system/bin/mac-update                                  u:object_r:mac-update_exec:s0
 /system/bin/bdAddrLoader                                u:object_r:bluetooth_loader_exec:s0
