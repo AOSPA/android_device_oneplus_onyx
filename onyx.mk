@@ -116,3 +116,6 @@ PRODUCT_PACKAGES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     OneplusDoze
+
+PRODUCT_PACKAGES += \
+    libshims_sensors
