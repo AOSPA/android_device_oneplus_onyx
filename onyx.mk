@@ -119,3 +119,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libshims_sensors
+
+PRODUCT_PACKAGES += \
+    camera.msm8974

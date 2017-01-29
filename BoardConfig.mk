@@ -127,4 +127,5 @@ TARGET_HW_KEYMASTER_V03 := true
 BOARD_RIL_CLASS += ../../../device/oneplus/onyx/ril
 
 # Camera
-TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_USES_MEDIA_EXTENSIONS := true

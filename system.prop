@@ -165,7 +165,3 @@ persist.env.fastdorm.enabled=true
 persist.radio.data_no_toggle=1
 persist.radio.eons.enabled=false
 persist.radio.ril_payload_on=0
-
-# HAL1
-media.stagefright.legacyencoder=true
-media.stagefright.less-secure=true
