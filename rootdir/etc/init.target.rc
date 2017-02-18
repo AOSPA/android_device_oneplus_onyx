@@ -35,8 +35,6 @@ on early-init
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 2457600
 
 on init
-    export LD_SHIM_LIBS "/system/vendor/lib/libcne.so|libshim_ril.so:/system/lib/libril.so|libshim_ril.so"
-
     # Set the property to indicate type of virtual display to 0
     # 0 indicates that virtual display is not a Wifi display and that the
     # session is not exercised through RemoteDisplay in the android framework

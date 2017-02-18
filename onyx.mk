@@ -97,10 +97,6 @@ PRODUCT_PACKAGES += \
     mac-update \
     bdAddrLoader
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_ril
-
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
