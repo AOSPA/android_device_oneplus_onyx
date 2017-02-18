@@ -37,15 +37,12 @@ typedef struct SocketListenParam {
     RIL_SOCKET_ID socket_id;
     int fdListen;
     int fdCommand;
-    char* processName;
+    const char* processName;
     struct ril_event* commands_event;
     struct ril_event* listen_event;
     void (*processCommandsCallback)(int fd, short flags, void *param);
     RecordStream *p_rs;
     RIL_SOCKET_TYPE type;
 } SocketListenParam;
-
-void RIL_register_socket (RIL_RadioFunctions *(*rilUimInit)
-        (const struct RIL_Env *, int, char **), RIL_SOCKET_TYPE socketType, int argc, char **argv) {}
 
 #endif
