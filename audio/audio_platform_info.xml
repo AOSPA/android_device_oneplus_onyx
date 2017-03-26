@@ -50,7 +50,7 @@
 
 	<pcm_ids>
 		<!-- empty -->
-    </pcm_ids>
+	</pcm_ids>
 
 	<device_names>
 		<device name="SND_DEVICE_IN_HDMI_MIC" alias="hdmi-tx" />
