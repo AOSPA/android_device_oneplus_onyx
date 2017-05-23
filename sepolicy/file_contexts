@@ -11,3 +11,6 @@
 /data/oemnvitems(/.*)?                                  u:object_r:nv_data_file:s0
 
 /data/misc/perfd/mpctl                                  u:object_r:mpctl_socket:s0
+
+# WiFi
+/dev/rfkill                                             u:object_r:wpa_device:s0
