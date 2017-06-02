@@ -527,7 +527,7 @@ const QCameraParameters::QCameraMap QCameraParameters::ANTIBANDING_MODES_MAP[] =
 
 const QCameraParameters::QCameraMap QCameraParameters::ISO_MODES_MAP[] = {
     { ISO_AUTO,  CAM_ISO_MODE_AUTO },
-    { ISO_HJR,   CAM_ISO_MODE_DEBLUR },
+    { ISO_HJR,   CAM_ISO_MODE_AUTO }, // ISO DEBLUR is broken in the backend
     { ISO_100,   CAM_ISO_MODE_100 },
     { ISO_200,   CAM_ISO_MODE_200 },
     { ISO_400,   CAM_ISO_MODE_400 },
@@ -1959,7 +1959,7 @@ int32_t QCameraParameters::setSceneFocusMode(const QCameraParameters& params)
                 isAutoFocusModeSupported = TRUE;
         }
         if (isAutoFocusModeSupported) {
-            rc = setFocusMode(FOCUS_MODE_AUTO);
+            rc = setFocusMode(FOCUS_MODE_CONTINUOUS_PICTURE);
         } else {
             rc = setFocusMode(FOCUS_MODE_FIXED);
         }
@@ -3514,7 +3514,7 @@ int32_t QCameraParameters::setWaveletDenoise(const QCameraParameters& params)
             return setWaveletDenoise(DENOISE_OFF);
         }
     }
-    const char *str = params.get(KEY_QC_DENOISE);
+    const char *str = "denoise-on";
     const char *prev_str = get(KEY_QC_DENOISE);
     if (str != NULL) {
         if (prev_str == NULL ||
@@ -4092,7 +4092,7 @@ int32_t QCameraParameters::initDefaultParameters()
     set(KEY_QC_RAW_PICUTRE_SIZE, raw_size_str);
 
     //set default jpeg quality and thumbnail quality
-    set(KEY_JPEG_QUALITY, 98);
+    set(KEY_JPEG_QUALITY, 95);
     set(KEY_JPEG_THUMBNAIL_QUALITY, 85);
 
     // Set FPS ranges
@@ -4336,7 +4336,7 @@ int32_t QCameraParameters::initDefaultParameters()
 
     //Set AF Bracketing.
     for(int i=0;i < m_pCapability->supported_focus_modes_cnt; i++) {
-        if ((CAM_FOCUS_MODE_AUTO == m_pCapability->supported_focus_modes[i]) &&
+        if ((CAM_FOCUS_MODE_CONTINOUS_PICTURE == m_pCapability->supported_focus_modes[i]) &&
                 ((m_pCapability->qcom_supported_feature_mask &
                         CAM_QCOM_FEATURE_UBIFOCUS) > 0)) {
             String8 afBracketingValues = createValuesStringFromMap(
@@ -5045,7 +5045,7 @@ int32_t QCameraParameters::setSharpness(int sharpness)
     updateParamEntry(KEY_QC_SHARPNESS, val);
     CDBG("%s: Setting sharpness %s", __func__, val);
 
-    int32_t value = sharpness;
+    int32_t value = 6;
     return AddSetParmEntryToBatch(m_pParamBuf,
                                   CAM_INTF_PARM_SHARPNESS,
                                   sizeof(value),
@@ -7656,11 +7656,7 @@ int QCameraParameters::getBurstNum()
  *==========================================================================*/
 int QCameraParameters::getJpegQuality()
 {
-    int quality = getInt(KEY_JPEG_QUALITY);
-    if (quality < 0) {
-        quality = 98; // set to default quality value
-    }
-    return quality;
+    return 95;
 }
 
 
