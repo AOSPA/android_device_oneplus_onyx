@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e6bf53f3_0968ef78",
+        "filename": "system.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-06-02T18:08:29Z",
+      "side": 0,
+      "message": "Why?",
+      "range": {
+        "startLine": 118,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 20
+      },
+      "revId": "485ee8b2d33604c9ed5fd528ee94348cf68abb55",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
