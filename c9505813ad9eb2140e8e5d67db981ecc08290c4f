@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a2a27d59_2251c330",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-06-03T12:40:42Z",
+      "side": 1,
+      "message": "Are you sure each of the ones you added are really used?",
+      "range": {
+        "startLine": 154,
+        "startChar": 0,
+        "endLine": 164,
+        "endChar": 40
+      },
+      "revId": "c9505813ad9eb2140e8e5d67db981ecc08290c4f",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
