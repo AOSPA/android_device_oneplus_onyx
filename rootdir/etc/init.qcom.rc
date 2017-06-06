@@ -552,6 +552,12 @@ on property:bluetooth.hciattach=true
 on property:bluetooth.hciattach=false
     setprop bluetooth.status off
 
+service mac-update /system/bin/mac-update
+   class late_start
+   user system
+   group system wifi
+   oneshot
+
 service adsprpcd /system/bin/adsprpcd
    class main
    user media

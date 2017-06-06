@@ -218,3 +218,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     wcnss_service
+
+PRODUCT_PACKAGES += \
+    mac-update
