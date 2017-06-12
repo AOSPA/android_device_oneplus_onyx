@@ -80,6 +80,7 @@ ro.qualcomm.cabl=0
 
 # QC vendor extension
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.qualcomm.perf.cores_online 4
 drm.service.enabled=true
 
 # QMI
