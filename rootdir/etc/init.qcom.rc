@@ -498,12 +498,6 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-service mpdecision /system/bin/mpdecision --avg_comp
-   class main
-   user root
-   group system
-   disabled
-
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
