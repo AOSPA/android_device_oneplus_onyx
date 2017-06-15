@@ -1,4 +1,4 @@
-on early-init
+n early-init
     write /sys/block/mmcblk0/queue/scheduler "noop"
     write /sys/block/mmcblk0/bdi/read_ahead_kb 1024
     write /sys/class/mmc_host/mmc0/clk_scaling/scale_down_in_low_wr_load 1
@@ -91,4 +91,3 @@ on property:dev.bootcomplete=1
     write /sys/block/mmcblk0/queue/scheduler "deadline"
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
     trigger post-boot
-    start mpdecision
