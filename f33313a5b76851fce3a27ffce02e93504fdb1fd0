@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a293fc5_340eecb1",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-06-15T16:06:37Z",
+      "side": 1,
+      "message": "Hm, seems not to belong this change",
+      "range": {
+        "startLine": 221,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 56
+      },
+      "revId": "f33313a5b76851fce3a27ffce02e93504fdb1fd0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
