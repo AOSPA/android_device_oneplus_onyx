@@ -51,9 +51,6 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := msm8974-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := onyx,OnePlus,E1003,ONE
 
@@ -104,7 +101,6 @@ USE_DEVICE_SPECIFIC_GPS := true
 USE_DEVICE_SPECIFIC_LOC_API := true
 
 # Graphics
-HAVE_ADRENO_SOURCE := false
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
@@ -137,18 +133,12 @@ PROTOBUF_SUPPORTED := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
-# RIL
-TARGET_RIL_VARIANT := caf
-
 # RPC
 TARGET_NO_RPC := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
      device/oneplus/onyx/sepolicy
-
-# SnapDragon LLVM Compiler
-TARGET_USE_SDCLANG := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -164,12 +154,9 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # QCNE
-BOARD_USES_QCNE := true
-
-ifeq ($(BOARD_USES_QCNE),true)
 TARGET_LDPRELOAD := libNimsWrap.so
-endif
 
+# Gestures
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 TARGET_POWER_GESTURE_FILE := device/oneplus/onyx/power/gestures.c
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
