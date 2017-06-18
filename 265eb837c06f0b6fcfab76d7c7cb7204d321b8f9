@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c8c76fe_a9ca4bfa",
+        "filename": "rootdir/etc/init.qcom.power.rc",
+        "patchSetId": 6
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-06-18T19:55:30Z",
+      "side": 1,
+      "message": "I would recommend 80",
+      "range": {
+        "startLine": 59,
+        "startChar": 58,
+        "endLine": 59,
+        "endChar": 60
+      },
+      "revId": "265eb837c06f0b6fcfab76d7c7cb7204d321b8f9",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
