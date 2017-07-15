@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df18e15f_07839406",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-07-15T13:52:58Z",
+      "side": 1,
+      "message": "Where is that?",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 39
+      },
+      "revId": "cbd72551db083272eaca179b3ee5553b27c65a87",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
