@@ -51,8 +51,8 @@ on post-boot
     chmod 664 /sys/devices/system/cpu/cpu2/online
     chmod 664 /sys/devices/system/cpu/cpu3/online
 
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1190400 1:1190400"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 80
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1190400 1:1497600"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 100
 
     write /sys/class/devfreq/qcom,cpubw.41/governor "msm_cpufreq"
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
