@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "adffafb3_3e739426",
+        "filename": "audio/audio_platform_info.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2017-07-20T19:59:00Z",
+      "side": 0,
+      "message": "Keep SPEAKER_AND_LINE",
+      "revId": "f39230a49c85cf3cadc0c9e01b3af3d8fc507832",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
