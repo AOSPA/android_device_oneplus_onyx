@@ -63,7 +63,7 @@
     <ctl name="SEC_AUX_PCM_RX_Voice Mixer CSVoice" value="0" />
     <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="0" />
     <ctl name="Voice_Tx Mixer SEC_AUX_PCM_TX_Voice" value="0" />
-	<ctl name="SLIM_0_RX Format" value="S16_LE" />
+    <ctl name="SLIM_0_RX Format" value="S16_LE" />
     <!-- Audio BTSCO -->
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia4" value="0" />
@@ -397,9 +397,9 @@
         <path name="low-latency-playback" />
     </path>
 
-	<!-- add mi2s use case -->
+    <!-- add mi2s use case -->
     <path name="deep-buffer-playback speaker">
-		<ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-and-headphones">
@@ -427,7 +427,7 @@
         <ctl name="SEC_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer SLIM_0_TX_Voice2" value="1" />
     </path>
-	<!-- add mi2s use case end -->
+    <!-- add mi2s use case end -->
 
     <path name="low-latency-playback transmission-fm">
         <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia5" value="1" />
@@ -531,8 +531,12 @@
         <ctl name="MultiMedia8 Mixer AFE_PCM_TX" value="1" />
     </path>
 
-    <path name="fm-virtual-record capture-fm">
+    <path name="fm-virtual-record">
         <ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="1" />
+    </path>
+
+    <path name="fm-virtual-record capture-fm">
+        <path name="fm-virtual-record"  />
     </path>
 
     <path name="voice-call">
@@ -843,8 +847,8 @@
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
-	<path name="compress-voip-call speaker">
-	    <ctl name="VOC_EXT_EC MUX" value="SEC_MI2S_TX" />
+    <path name="compress-voip-call speaker">
+        <ctl name="VOC_EXT_EC MUX" value="SEC_MI2S_TX" />
         <ctl name="SEC_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
@@ -938,7 +942,7 @@
         <ctl name="IIR1 INP1 MUX" value="DEC5" />
         <ctl name="DEC5 Volume" value="83" />
         <ctl name="ADC2 Volume" value="19" />
-		<ctl name="SLIM_0_RX Format" value="S16_LE" />
+        <ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
     <path name="adc4">
@@ -948,10 +952,10 @@
         <ctl name="DEC3 MUX" value="ADC4" />
         <ctl name="ADC4 Volume" value="19" />
         <ctl name="DEC3 Volume" value="84" />
-		<ctl name="SLIM_0_RX Format" value="S16_LE" />
+        <ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
-	<!--xiaojun.lv@phoneSW.AudioDrv,14001 need use ANC mic-->
+    <!--xiaojun.lv@phoneSW.AudioDrv,14001 need use ANC mic-->
     <path name="adc5">
         <ctl name="AIF1_CAP Mixer SLIM TX7" value="1"/>
         <ctl name="SLIM_0_TX Channels" value="One" />
@@ -959,7 +963,7 @@
         <ctl name="DEC2 MUX" value="ADC5" />
         <ctl name="ADC5 Volume" value="19" />
         <ctl name="DEC2 Volume" value="84" />
-		<ctl name="SLIM_0_RX Format" value="S16_LE" />
+        <ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
     <path name="dmic1">
@@ -969,7 +973,7 @@
         <ctl name="DEC4 MUX" value="ADC3" />
         <ctl name="ADC3 Volume" value="19" />
         <ctl name="DEC4 Volume" value="84" />
-	<ctl name="SLIM_0_RX Format" value="S16_LE" />
+        <ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
     <path name="speaker">
@@ -981,7 +985,6 @@
         <ctl name="LINEOUT3 Volume" value="13" />
         <ctl name="RX3 Digital Volume" value="80" />
         <ctl name="RX4 Digital Volume" value="80" />
-      	<ctl name="SPKR Enable" value="1" />
     </path>
 
     <path name="speaker-fluid">
@@ -1047,7 +1050,7 @@
      <ctl name="ADC4 Volume" value="12" />
      <ctl name="DEC3 Volume" value="84" />
      <ctl name="DEC4 Volume" value="84" />
-     <ctl name="left Profile" value="1"/> 
+     <ctl name="left Profile" value="1"/>
     </path>
 
     <path name="speaker-mic-liquid">
@@ -1147,14 +1150,14 @@
     <path name="voice-handset">
         <path name="sidetone-handset" />
         <path name="handset" />
-	<!--wangdongdong@OnePlus.AudioDrv,2015/02/02,increase 5dB(84-89) of voice handset rx-->
+        <!--wangdongdong@OnePlus.AudioDrv,2015/02/02,increase 5dB(84-89) of voice handset rx-->
         <ctl name="RX1 Digital Volume" value="89" />
     </path>
 
     <path name="voice-handset-qosound">
         <path name="sidetone-handset" />
         <path name="handset" />
-	<!--lifei@OnePlus.AudioDrv,2015/08/25,increase 5dB(84-89) of voice handset rx-->
+        <!--lifei@OnePlus.AudioDrv,2015/08/25,increase 5dB(84-89) of voice handset rx-->
         <ctl name="RX1 Digital Volume" value="89" />
     </path>
 
@@ -1164,9 +1167,9 @@
 
     <path name="voice-speaker">
         <path name="speaker" />
-    <!--lifei1@phoneSW.AudioDrv,14001 voice speaker use 16bit format-->
+        <!--lifei1@phoneSW.AudioDrv,14001 voice speaker use 16bit format-->
         <ctl name="SLIM_0_RX Format" value="S16_LE" />
-    <!--lifei@phoneSW.AudioDrv,14001 end-->
+        <!--lifei@phoneSW.AudioDrv,14001 end-->
     </path>
 
     <path name="voice-speaker-DB">
@@ -1191,9 +1194,9 @@
 
     <path name="voice-headset-mic">
         <path name="headset-mic" />
-	<!--lifei1@phoneSW.AudioDrv,14001 remove sidetone-handset for phone -->
+        <!--lifei1@phoneSW.AudioDrv,14001 remove sidetone-handset for phone -->
         <!--path name="sidetone-headphones" /-->
-	 <!--lifei@phoneSW.AudioDrv,14001 remove sidetone-handset for phone end-->
+        <!--lifei@phoneSW.AudioDrv,14001 remove sidetone-handset for phone end-->
         <ctl name="ADC2 Volume" value="13" />
     </path>
 
@@ -1212,7 +1215,6 @@
         <ctl name="LINEOUT3 Volume" value="13" />
         <ctl name="RX3 Digital Volume" value="84" />
         <ctl name="RX4 Digital Volume" value="84" />
-        <ctl name="SPKR Enable" value="1" />
     </path>
 
     <path name="speaker-and-headphones-fluid">
@@ -1425,7 +1427,7 @@
         <ctl name="SLIM TX8 MUX" value="DEC3" />
         <ctl name="DEC3 MUX" value="ADC4" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
-		<ctl name="SLIM_0_RX Format" value="S16_LE" />
+        <ctl name="SLIM_0_RX Format" value="S16_LE" />
     </path>
 
     <path name="speaker-dmic-endfire-liquid">
@@ -1456,8 +1458,8 @@
         <ctl name="IIR1 INP1 MUX" value="DEC7" />
     </path>
 
-	<path name="voice-speaker-voip-mic">
-		<path name="speaker-dmic-endfire" />
+    <path name="voice-speaker-voip-mic">
+        <path name="speaker-dmic-endfire" />
         <ctl name="DEC3 Volume" value="84" />
         <ctl name="DEC4 Volume" value="78" />
         <ctl name="ADC3 Volume" value="13" />
@@ -1489,10 +1491,10 @@
 
     <path name="voice-dmic-ef">
         <path name="speaker-dmic-endfire" />
-    	<ctl name="ADC3 Volume" value="8" />
-    	<ctl name="ADC4 Volume" value="8" />
-	    <ctl name="DEC3 Volume" value="84" />
-	    <ctl name="DEC4 Volume" value="84" />
+        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="8" />
+        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="84" />
     </path>
 
     <!--wangdongdong.AudioDrv,14001 camcorder use dual mic-->
@@ -1503,11 +1505,11 @@
     <!--xiaojun.lv@phoneSW.AudioDrv,14001 handsfree call use ANC mic-->
     <path name="voice-speaker-dmic-ef">
         <path name="speaker-dmic-endfire" />
-    	<ctl name="ADC3 Volume" value="8" />
-    	<ctl name="ADC4 Volume" value="12" />
-	    <ctl name="DEC3 Volume" value="84" />
-	    <ctl name="DEC4 Volume" value="84" />
-		<ctl name="left Profile" value="1"/>
+        <ctl name="ADC3 Volume" value="8" />
+        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="DEC3 Volume" value="84" />
+        <ctl name="DEC4 Volume" value="84" />
+        <ctl name="left Profile" value="1"/>
     </path>
 
     <path name="voice-rec-dmic-ef">
@@ -1608,7 +1610,6 @@
     </path>
 
     <!-- TTY devices -->
-
     <path name="tty-headphones">
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
