@@ -12,3 +12,5 @@
 
 /data/cam_socket1                                       u:object_r:camera_socket:s0
 /data/cam_socket2                                       u:object_r:camera_socket:s0
+
+/sys/class/leds/lcd-backlight/brightness                u:object_r:touchscreen_file:s0
