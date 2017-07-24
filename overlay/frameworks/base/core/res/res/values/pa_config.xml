@@ -43,11 +43,19 @@
     <integer name="config_twoFingerSwipeKeyCode">251</integer>
     <integer name="config_drawArrowLeftKeyCode">253</integer>
     <integer name="config_drawArrowRightKeyCode">254</integer>
+    <integer name="config_drawInverseVKeyCode">255</integer>
+    <integer name="config_oneFingerSwipeLeftKeyCode">258</integer>
+    <integer name="config_oneFingerSwipeRightKeyCode">259</integer>
+    <integer name="config_drawMKeyCode">256</integer>
+    <integer name="config_drawWKeyCode">257</integer>
+    <integer name="config_oneFingerSwipeUpKeyCode">261</integer>
+    <integer name="config_oneFingerSwipeDownKeyCode">260</integer>
     <integer name="config_doubleTapDefault">1</integer>
     <integer name="config_drawVDefault">2</integer>
     <integer name="config_drawODefault">7</integer>
     <integer name="config_drawArrowLeftDefault">6</integer>
     <integer name="config_drawArrowRightDefault">5</integer>
+    <integer name="config_oneFingerSwipeUpDefault">1</integer>
     <integer name="config_twoFingerSwipeDefault">4</integer>
 
     <!-- Whether to to intercept inputs on screen off. -->
