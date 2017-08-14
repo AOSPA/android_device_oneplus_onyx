@@ -109,6 +109,9 @@ wifi.interface=wlan0
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
+# Increase cached app limit
+ro.sys.fw.bg_apps_limit=28
+
 # Dalvik VM Properties
 dalvik.vm.heapstartsize=24m
 dalvik.vm.heapgrowthlimit=320m
