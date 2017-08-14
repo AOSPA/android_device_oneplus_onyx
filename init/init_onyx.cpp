@@ -46,18 +46,22 @@ void vendor_load_properties()
         /* China */
         property_set("ro.product.model", "ONE E1001");
         property_set("ro.rf_version", "TDD_FDD_Ch_All");
+        property_set("ro.telephony.default_network", "20,20");
     } else if (rf_version == "102") {
         /* Asia/Europe */
         property_set("ro.product.model", "ONE E1003");
         property_set("ro.rf_version", "TDD_FDD_Eu");
+        property_set("ro.telephony.default_network", "10,10");
     } else if (rf_version == "103"){
         /* America */
         property_set("ro.product.model", "ONE E1005");
         property_set("ro.rf_version", "TDD_FDD_Am");
+        property_set("ro.telephony.default_network", "9,9");
     } else if (rf_version == "107"){
         /* China CTCC Version */
         property_set("ro.product.model", "ONE E1000");
         property_set("ro.rf_version", "TDD_FDD_ALL_OPTR");
+        property_set("ro.telephony.default_network", "20,20");
     }
     device = property_get("ro.product.device");
     INFO("Found rf_version : %s setting build properties for %s device\n", rf_version.c_str(), device.c_str());
